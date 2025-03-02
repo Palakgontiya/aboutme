@@ -35,3 +35,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 // experience
 // skills
 // project
+
+
+<!-- Features to be implimented -->
+
+// give language options at least hindi and english
+// resume Builder
+
+<!-- https://nichol-vuejs.vercel.app/ -->
+
+<!-- https://mattfarley.ca/ -->

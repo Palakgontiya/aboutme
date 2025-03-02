@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+.d-flex{
+    display: flex;
+}
+.f-column{
+    flex-direction: column;
+}
+.j-between{
+    justify-content: space-between;
+    align-items: center;
+}
+.vertical-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
