@@ -1,0 +1,15 @@
+<div class="header d-flex j-between" [class.flip]="direction === 'LTR'">
+    <ul class="vertical-align">
+        <li [class.active]="currentSection == 'Home'" (click)="navigateTo('Home')">Home</li>
+        <li [class.active]="currentSection == 'About Me'" (click)="navigateTo('About Me')">About Me</li>
+        <li [class.active]="currentSection == 'Experience'" (click)="navigateTo('Experience')">Experience</li>
+        <li [class.active]="currentSection == 'Projects'" (click)="navigateTo('Projects')">Projects</li>
+        <li [class.active]="currentSection == 'Skills'" (click)="navigateTo('Skills')">Skills</li>
+        <li [class.active]="currentSection == 'Education'" (click)="navigateTo('Education')">Education</li>
+    </ul>
+    <div class="logo vertical-align">
+        <!-- <img src="./images/logo-design.png" width="50" height="50"/> -->
+        <img src="./images/information.png" width="50" height="50"/>
+        <h1>AboutMe</h1>
+    </div>
+</div>

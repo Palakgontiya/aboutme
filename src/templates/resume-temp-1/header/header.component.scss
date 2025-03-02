@@ -1,0 +1,40 @@
+.header{
+    width: 100vw;
+    padding: 20px 80px;
+    background-color: black;
+    &.flip{
+        flex-direction: row-reverse;
+    }
+    ul{
+        gap: 24px;
+        li{
+            list-style-type: none;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &.active{
+                color: transparent;
+                background: linear-gradient(to right, #FF69B4, #984FF4);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        };
+    }
+    .logo{
+        gap: 6px;
+        img{
+            width: 50px;
+            height: auto;
+        }
+        h1 {
+            font-size: 30px;
+            color: transparent;
+            background: linear-gradient(to right, #FF69B4, #984FF4);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+    }
+}

@@ -1,0 +1,94 @@
+.hero-section{
+    &.flip{
+        flex-direction: row-reverse;
+        .who-i-am{
+            align-items: flex-start; 
+            padding-right: 20px;
+            padding-left: 80px;
+            p{
+                text-align: left;
+            }
+        }
+    }
+    .my-visuals{
+        position: relative;
+        height: calc(100vh - 90px);
+        background: radial-gradient(circle,#984FF4, #FFB347);
+        width: 50%;
+        img {
+            height: 60%;
+            width: 60%;
+            border-radius: 50%; /* Ensures a perfect circle */
+            object-fit: cover; /* Ensures the face fills the circle */
+            object-position: center top; /* Adjust position to keep the face visible */
+            position: relative;
+            margin-top: 60px;
+        }
+        .bg-text {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 6vw; 
+            font-weight: bold;
+            color: rgb(244 235 235 / 20%);
+            text-transform: uppercase;
+            text-align: center;
+            z-index: 1;
+        }
+    }
+    .who-i-am{
+        position: relative;
+        width: 50%;
+        height: calc(100vh - 90px);
+        align-items: flex-end;
+        justify-content: center;
+        gap: 40px;
+        padding-right: 80px;
+        padding-left: 20px;
+        .hi-text{
+            padding: 10px;
+            border-radius: 8px;
+            background: #fff6e4;
+            color: #ffc529;
+            font-size: 18px;
+        }
+        h1{
+            font-size: 48px;
+        }
+        p{
+            text-align: right;
+            color: rgb(119 128 161);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        .cta{
+            gap: 20px;
+            button{
+                cursor: pointer;
+                padding: 20px;
+            }
+            .cv{
+                background: #ffffff;
+                border: 2px solid #dadce0;
+                font-size: 18px;
+                color: rgb(119 128 161);
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    background: #000000;
+                    border-color: #ffffff;
+                    color: #ffffff;
+                }
+
+            }
+            .hire{
+                color: #ffffff;
+                background: #984FF4;
+                font-size: 18px;
+                border: 1px solid transparent;
+            }
+        }
+       
+    }
+}
