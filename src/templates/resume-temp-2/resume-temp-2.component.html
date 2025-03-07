@@ -1,1 +1,10 @@
-<p>resume-temp-2 works!</p>
+<header class="j-between">
+    <div><img src="" alt="" srcset=""></div>
+    <div class="action-btns">
+        @for (btn of header.action_btn; track btn) {
+        <button class="action-btn {{btn.type}}" (click)="btn.action?.(btn.name)">
+            {{ btn?.name }}
+        </button>
+        }
+    </div>
+</header>

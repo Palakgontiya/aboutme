@@ -1,2 +1,10 @@
-<app-header [direction]="direction"></app-header>
-<app-hero-section [direction]="direction"></app-hero-section>
+<section class="main-container d-flex f-column" [class.flip]="direction === 'LTR'">
+    <app-header [direction]="direction"></app-header>
+    <app-hero-section [direction]="direction"></app-hero-section>
+    <div class="btns">
+        <button (click)="changeDirection()" class="direction">
+            RTL
+        </button>
+        <button class="theme">Dark</button>
+    </div>
+</section>
