@@ -19,3 +19,14 @@
     align-items: center;
     justify-content: center;
 }
+.pill {
+    padding: 14px 22px;
+    background: #984FF4;
+    color: #ffffff;
+    font-size: 14px; 
+    display: inline-flex;
+    border-radius: 50px;
+    width: auto; 
+    max-width: max-content; 
+    white-space: nowrap; 
+}

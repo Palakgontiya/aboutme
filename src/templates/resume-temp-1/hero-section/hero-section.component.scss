@@ -46,6 +46,8 @@
         gap: 40px;
         padding-right: 80px;
         padding-left: 20px;
+        border-bottom: 2px solid rgb(230 231 234);
+        border-top: 2px solid transparent;
         .hi-text{
             padding: 10px;
             border-radius: 8px;
@@ -87,6 +89,20 @@
                 background: #984FF4;
                 font-size: 18px;
                 border: 1px solid transparent;
+            }
+        }
+        .stats{
+            gap: 32px;
+            .item{
+                font-size: 24px;
+                font-weight: 500;
+                color: #000000;
+                gap: 14px;
+                span{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: rgb(119 128 161);
+                }
             }
         }
        

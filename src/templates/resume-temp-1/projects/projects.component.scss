@@ -1,0 +1,37 @@
+.projects{
+    background: #000000;
+    padding: 50px 80px;
+    gap: 32px;
+    h2{
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .project-cards{
+        gap:32px;
+    }
+    .card{
+        gap: 20px;
+        width: 312px;
+        border: 1px solid rgba(119, 128, 161, .12);
+        padding: 20px;
+        background: linear-gradient(135deg, #0B0E14, #141824);
+        max-height: 300px;
+        overflow: hidden;
+        img{
+            width: 50px;
+            height: auto;
+        }
+        h3{
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(119 128 161);
+            line-height: 140%;
+        }
+    }
+}
