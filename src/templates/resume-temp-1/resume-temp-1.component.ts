@@ -18,12 +18,16 @@ import { EducationAndExperienceComponent } from './education-and-experience/educ
   templateUrl: './resume-temp-1.component.html',
   styleUrl: './resume-temp-1.component.scss'
 })
-export class ResumeTemp1Component implements OnInit {
+export class ResumeTemp1Component {
 
-   @Input() direction:string = 'RTL';
+   direction:string = 'RTL'
 
-   ngOnInit(): void {
-     
+   changeDirection(){
+     if(this.direction == 'RTL'){
+       this.direction = 'LTR';
+     }else{
+       this.direction = 'RTL';
+     }
    }
 
 }

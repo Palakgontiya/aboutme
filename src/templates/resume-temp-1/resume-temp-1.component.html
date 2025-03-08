@@ -1,5 +1,13 @@
-<app-header [direction]="direction"></app-header>
-<app-hero-section [direction]="direction"></app-hero-section>
-<app-about-me [direction]="direction"></app-about-me>
-<app-projects></app-projects>
-<app-education-and-experience></app-education-and-experience>
+<section class="main-container d-flex f-column" [class.flip]="direction === 'LTR'">
+    <app-header [direction]="direction"></app-header>
+    <app-hero-section [direction]="direction"></app-hero-section>
+    <app-about-me [direction]="direction"></app-about-me>
+    <app-projects></app-projects>
+    <app-education-and-experience></app-education-and-experience>
+    <div class="btns">
+        <button (click)="changeDirection()" class="direction">
+            RTL
+        </button>
+        <button class="theme">Dark</button>
+    </div>
+</section>
